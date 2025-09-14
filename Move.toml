@@ -5,7 +5,7 @@ edition = "2024.beta" # edition = "legacy" to use legacy (pre-2024) Move
 # authors = ["..."]      # e.g., ["Joe Smith (joesmith@noemail.com)", "John Snow (johnsnow@noemail.com)"]
 
 [dependencies]
-pnged_treasury={local="../pnged_treasury"}
+#pnged_treasury={local="../pnged_treasury"}
 # For remote import, use the `{ git = "...", subdir = "...", rev = "..." }`.
 # Revision can be a branch, a tag, and a commit hash.
 # MyRemotePackage = { git = "https://some.remote/host.git", subdir = "remote/path", rev = "main" }
@@ -19,7 +19,7 @@ pnged_treasury={local="../pnged_treasury"}
 
 [addresses]
 pnged_lending_protocol = "0x0"
-teasury_wallet="0xa084fa5133a14d0d744974b99dacf33da1e01bdad88929c5c80666da2706264f"
+treasury_wallet="0xa084fa5133a14d0d744974b99dacf33da1e01bdad88929c5c80666da2706264f"
 #pnged_treasury = "0xc9c7e378007bd8e6f44d0e560c06173276772e5b357e3ed009f77f7289389e0f"
 # Named addresses will be accessible in Move as `@name`. They're also exported:
 # for example, `std = "0x1"` is exported by the Standard Library.

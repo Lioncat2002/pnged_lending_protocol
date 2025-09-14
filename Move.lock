@@ -2,14 +2,13 @@
 
 [move]
 version = 3
-manifest_digest = "4697E151E6778176D1FA0C0A0D34679DEAC964789EC371368B208B24D706DC6A"
-deps_digest = "397E6A9F7A624706DBDFEE056CE88391A15876868FD18A88504DA74EB458D697"
+manifest_digest = "D13664DF31A49AEF2A54334F668A0495366F72FA29AABF4DD33C48CB771D7E19"
+deps_digest = "F9B494B64F0615AED0E98FC12A85B85ECD2BC5185C22D30E7F67786BB52E507C"
 dependencies = [
   { id = "Bridge", name = "Bridge" },
   { id = "MoveStdlib", name = "MoveStdlib" },
   { id = "Sui", name = "Sui" },
   { id = "SuiSystem", name = "SuiSystem" },
-  { id = "pnged_treasury", name = "pnged_treasury" },
 ]
 
 [[move.package]]
@@ -41,17 +40,6 @@ source = { git = "https://github.com/MystenLabs/sui.git", rev = "b448b1d971bd6c1
 dependencies = [
   { id = "MoveStdlib", name = "MoveStdlib" },
   { id = "Sui", name = "Sui" },
-]
-
-[[move.package]]
-id = "pnged_treasury"
-source = { local = "../pnged_treasury" }
-
-dependencies = [
-  { id = "Bridge", name = "Bridge" },
-  { id = "MoveStdlib", name = "MoveStdlib" },
-  { id = "Sui", name = "Sui" },
-  { id = "SuiSystem", name = "SuiSystem" },
 ]
 
 [move.toolchain-version]
