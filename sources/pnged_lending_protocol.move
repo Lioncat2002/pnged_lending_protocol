@@ -107,7 +107,7 @@ public fun fund_loan<NFT: key+store>(loan: &mut Loan<NFT>, funds:&mut Coin<SUI>,
 
     event::emit(LoanFunded{
         loan_id: object::uid_to_address(&loan.id),
-        lender: option::extract<address>(&mut loan.lender),
+        lender: *option::borrow(&loan.lender),
         principal: loan.terms.principal,
         borrower: loan.borrower,
     });
